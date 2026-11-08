@@ -13,4 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --test tests/runtime.test.cjs
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - run: npm run build
+      - run: git diff --exit-code -- docs/employee-pilot/runtime.js docs/employee-pilot/setup.js

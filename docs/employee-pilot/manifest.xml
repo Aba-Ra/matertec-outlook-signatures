@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xsi:type="MailApp">
+  <Id>8d2b3cd6-832c-4cf7-83b6-b66e805332fa</Id>
+  <Version>1.1.0.0</Version><ProviderName>Matertec Pty Ltd</ProviderName><DefaultLocale>en-AU</DefaultLocale>
+  <DisplayName DefaultValue="Matertec Reply Signature Pilot"/>
+  <Description DefaultValue="Uses the approved Matertec template with each employee’s own Microsoft 365 business details."/>
+  <IconUrl DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/icon-128.png"/>
+  <SupportUrl DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/employee-pilot/setup.html"/>
+  <AppDomains><AppDomain>https://aba-ra.github.io</AppDomain></AppDomains>
+  <Hosts><Host Name="Mailbox"/></Hosts>
+  <Requirements><Sets DefaultMinVersion="1.1"><Set Name="Mailbox"/></Sets></Requirements>
+  <FormSettings><Form xsi:type="ItemRead"><DesktopSettings><SourceLocation DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/employee-pilot/setup.html"/><RequestedHeight>250</RequestedHeight></DesktopSettings></Form></FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+  <DisableEntityHighlighting>true</DisableEntityHighlighting>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
+      <Requirements><bt:Sets DefaultMinVersion="1.5"><bt:Set Name="Mailbox"/></bt:Sets></Requirements>
+      <Hosts><Host xsi:type="MailHost">
+        <Runtimes><Runtime resid="Runtime.Html"><Override type="javascript" resid="Runtime.Js"/></Runtime></Runtimes>
+        <DesktopFormFactor>
+          <FunctionFile resid="Runtime.Html"/>
+          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+            <OfficeTab id="TabDefault"><Group id="Matertec.Profile.Group"><Label resid="Profile.Label"/>
+              <Control xsi:type="Button" id="Matertec.Profile.Setup"><Label resid="Profile.Label"/><Supertip><Title resid="Profile.Label"/><Description resid="Profile.Description"/></Supertip>
+                <Icon><bt:Image size="16" resid="Profile.Icon"/><bt:Image size="32" resid="Profile.Icon"/><bt:Image size="80" resid="Profile.Icon"/></Icon>
+                <Action xsi:type="ShowTaskpane"><SourceLocation resid="Profile.Setup"/></Action>
+              </Control></Group></OfficeTab>
+          </ExtensionPoint>
+          <ExtensionPoint xsi:type="LaunchEvent"><LaunchEvents>
+            <LaunchEvent Type="OnNewMessageCompose" FunctionName="applyMatertecSignature"/>
+            <LaunchEvent Type="OnMessageFromChanged" FunctionName="applyMatertecSignature"/>
+          </LaunchEvents><SourceLocation resid="Runtime.Html"/></ExtensionPoint>
+        </DesktopFormFactor>
+        <MobileFormFactor>
+          <ExtensionPoint xsi:type="LaunchEvent"><LaunchEvents>
+            <LaunchEvent Type="OnNewMessageCompose" FunctionName="applyMatertecSignature"/>
+            <LaunchEvent Type="OnMessageFromChanged" FunctionName="applyMatertecSignature"/>
+          </LaunchEvents><SourceLocation resid="Runtime.Html"/></ExtensionPoint>
+        </MobileFormFactor>
+      </Host></Hosts>
+      <Resources><bt:Images><bt:Image id="Profile.Icon" DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/icon-128.png"/></bt:Images><bt:Urls>
+        <bt:Url id="Profile.Setup" DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/employee-pilot/setup.html"/>
+        <bt:Url id="Runtime.Html" DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/employee-pilot/runtime.html"/>
+        <bt:Url id="Runtime.Js" DefaultValue="https://aba-ra.github.io/matertec-outlook-signatures/employee-pilot/runtime.js"/>
+      </bt:Urls><bt:ShortStrings><bt:String id="Profile.Label" DefaultValue="Matertec signature"/></bt:ShortStrings><bt:LongStrings><bt:String id="Profile.Description" DefaultValue="Connect your Microsoft 365 work contact details and preview your signature."/></bt:LongStrings></Resources>
+    </VersionOverrides>
+  </VersionOverrides>
+</OfficeApp>

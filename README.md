@@ -16,3 +16,9 @@ Microsoft references
 - https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/mobile-event-based
 - https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/onmessagefromchanged-onappointmentfromchanged-events
 - https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions
+
+## Employee extension candidate
+
+`src/` and `docs/employee-pilot/` contain the proposed v1.1 replacement. It uses the same approved logo/layout and each sender's own Microsoft 365 name, title, email and business phone. A Microsoft single-tenant app registration and delegated User.Read consent are required; the client ID is deliberately unconfigured, so no profile requests occur until configured. No staff roster is stored on the public host. Shared Admin, Accounts and Info retain the approved role identities and Aba contacts. See [deployment steps and remaining gates](deployment/README.md).
+
+Run `npm ci --ignore-scripts`, `npm test`, `npm run build`. Commit the matching generated files so CI can detect a stale build. Existing docs/runtime.js and docs/manifest.xml are the unchanged v1.0 pilot. This branch is not published or installed.
