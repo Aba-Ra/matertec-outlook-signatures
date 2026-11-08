@@ -32,3 +32,7 @@ Microsoft references
 `src/` and `docs/employee-pilot/` contain the proposed v1.1 replacement. It uses the same approved logo/layout and each sender's own Microsoft 365 name, title, email and business phone. A Microsoft single-tenant app registration and delegated User.Read consent are required; the client ID is deliberately unconfigured, so no profile requests occur until configured. No staff roster is stored on the public host. Shared Admin, Accounts and Info retain the approved role identities and Aba contacts. See [deployment steps and remaining gates](deployment/README.md).
 
 Run `npm ci --ignore-scripts`, `npm test`, `npm run build`. Commit the matching generated files so CI can detect a stale build. Existing docs/runtime.js and docs/manifest.xml are the unchanged v1.0 pilot. This branch is not published or installed.
+
+### Cached web runtime bridge — 2026-11-08
+
+A live Outlook DOM check confirmed it was still loading this predecessor's runtime.html. That page now loads the already-reviewed canonical employee-pilot/runtime.js from Tools_General_Outlook_Signatures under the same GitHub Pages origin, with the canonical runtime CSP. This applies current app code to cached HTML-based clients without changing their manifest ID or permissions. The legacy JavaScript override used by classic Windows is not changed; its separate root-allowlist gate remains. No broader user assignment is introduced. This is a compatibility artifact, not a second source of runtime code.
