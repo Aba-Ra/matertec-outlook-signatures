@@ -1,0 +1,23 @@
+Copyright (c) 2026 Matertec Pty Ltd. All rights reserved.
+
+Matertec Signatures is proprietary software. Except for the third-party
+components identified in THIRD_PARTY_NOTICES.txt, Matertec Pty Ltd reserves
+all rights in the original code, documentation, application design and
+Matertec branding to the extent owned by Matertec.
+
+Use by Matertec and its authorised users is permitted under Matertec's
+applicable authorisation. No public licence to copy, modify, redistribute,
+sublicense or commercially exploit Matertec-owned material is granted by
+this repository or its public hosting. External customer use and commercial
+distribution require a separate written licence from Matertec Pty Ltd,
+subject to applicable law and any rights provided by the hosting platform.
+
+Third-party software remains the property of its respective copyright
+holders and is licensed under its own terms. Those terms and notices are
+not replaced or restricted by this notice. See THIRD_PARTY_NOTICES.txt.
+
+This notice records Matertec's intended ownership and reservation of rights.
+It does not transfer third-party or contributor rights, register copyright,
+or establish ownership of material in which copyright does not subsist.
+
+Licensing enquiries: admin@matertec.com
