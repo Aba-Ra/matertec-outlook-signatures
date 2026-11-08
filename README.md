@@ -40,3 +40,7 @@ A live Outlook DOM check confirmed it was still loading this predecessor's runti
 ### Approved app icons for cached catalogues — 2026-11-08
 
 Outlook's Apps catalogue still displayed the v1.0 name and plain corporate icon after the canonical app update. The predecessor icon-64.png and icon-128.png now serve byte-identical copies of the approved Matertec Signatures navy/envelope app icon from the canonical repository. Both old and current manifest URLs therefore resolve to the same approved app artwork. The signature's stacked email logo is unchanged. This does not force Microsoft to refresh an already-cached catalogue image or name; the live catalogue must be checked separately. App identity, permissions and Aba-only assignment are unchanged.
+
+## Contact routing
+
+Use **info@matertec.com** for licensing, external enquiries and questions. **admin@matertec.com** is reserved for internal company administration. Technical Microsoft tenant administration continues through the separately named administrator account; this contact policy does not change mailbox permissions or sender mappings.
