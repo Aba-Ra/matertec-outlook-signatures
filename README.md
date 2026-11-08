@@ -1,6 +1,6 @@
 # Superseded — UnifiedSignatures
 
-Canonical source has moved to **https://github.com/Aba-Ra/Tools_General_Outlook_Signatures** at Aba's instruction on 2026-11-08. The current app site is **https://aba-ra.github.io/Tools_General_Outlook_Signatures/** and canonical manifest is **https://aba-ra.github.io/Tools_General_Outlook_Signatures/manifest.xml**.
+Canonical private development source is **https://github.com/Aba-Ra/Matertec_apps_UnifiedSignatures**. Public distribution remains **https://github.com/Aba-Ra/Tools_General_Outlook_Signatures**. The owner selected **UnifiedSignatures by Matertec** on 8 November 2026; this compatibility repository keeps its existing address and installation identity. Branding-only version1.4.1.0 does not include private customer-configuration PR #7. The current app site is **https://aba-ra.github.io/Tools_General_Outlook_Signatures/** and canonical manifest is **https://aba-ra.github.io/Tools_General_Outlook_Signatures/manifest.xml**.
 
 This repository and host are retained as rollback history and for cached Outlook clients during the move. Do not start new development or install a second copy from here. The same add-in ID and Microsoft app registration are retained; the pilot remains Aba-only until actual client testing passes. No wider employee rollout has been accepted.
 
