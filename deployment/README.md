@@ -34,3 +34,9 @@ Expand the dedicated group only after evidence is recorded. Rollback: restore pr
 - https://learn.microsoft.com/en-us/samples/officedev/office-add-in-samples/outlook-event-sso-naa/
 - https://learn.microsoft.com/en-us/office/dev/add-ins/develop/use-sso-in-event-based-activation
 - https://learn.microsoft.com/en-us/javascript/api/requirement-sets/common/nested-app-auth-requirement-sets
+
+## Aba-only activation authorized — 2026-11-08
+
+Aba explicitly approved registering the app, accepting Microsoft Platform Policies and enabling own-profile access for aba.raha@matertec.com only, followed by live Outlook testing before any employee rollout. Registration succeeded: application client ID d609b965-7852-45d3-8816-8277a51dae19, app object b7bad62a-655b-4242-9799-df61590afddc, single tenant Matertec. No secret created. Earlier unconfigured/not-registered statements above are historical preparation.
+
+Authenticated GitHub owner-repository inventory (including private repositories) found exactly one Pages-enabled repository: this repository. Its sole listed collaborator is Aba-Ra; main requires pull request and strict signature-checks, enforces administrators and forbids force-push/deletion. This resolves the bounded current-origin inventory gate for this Aba-only pilot; it does not provide origin separation from any future Pages site. Reassess before creating another Pages site or changing publishing access. Classic Windows root allowlist remains a distinct unfulfilled gate.
