@@ -1,3 +1,13 @@
+# Superseded — Matertec Tools
+
+Canonical source has moved to **https://github.com/Aba-Ra/matertec-tools** at Aba's instruction on 2026-11-08. The current app site is **https://aba-ra.github.io/matertec-tools/** and canonical manifest is **https://aba-ra.github.io/matertec-tools/manifest.xml**.
+
+This repository and host are retained as rollback history and for cached Outlook clients during the move. Do not start new development or install a second copy from here. The same add-in ID and Microsoft app registration are retained; the pilot remains Aba-only until actual client testing passes. No wider employee rollout has been accepted.
+
+The historical code and deployment instructions below describe this predecessor. Use the new repository's README and deployment guide for current instructions.
+
+---
+
 # Matertec Outlook signatures
 
 A limited Outlook add-in pilot for Aba Raha. Static files are hosted on GitHub Pages separately from Matertec’s website. This repository contains only the public pilot files and tests; it contains no hosting credentials or mailbox data.
