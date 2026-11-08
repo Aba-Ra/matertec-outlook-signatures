@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xsi:type="MailApp">
   <Id>8d2b3cd6-832c-4cf7-83b6-b66e805332fa</Id>
-  <Version>1.4.0.0</Version><ProviderName>Matertec Pty Ltd</ProviderName><DefaultLocale>en-AU</DefaultLocale>
-  <DisplayName DefaultValue="Matertec Signatures"/>
+  <Version>1.4.1.0</Version><ProviderName>Matertec Pty Ltd</ProviderName><DefaultLocale>en-AU</DefaultLocale>
+  <DisplayName DefaultValue="UnifiedSignatures"/>
   <Description DefaultValue="Designed by Matertec to automatically update Outlook email signatures for employees using their own Microsoft 365 work details."/>
   <IconUrl DefaultValue="https://aba-ra.github.io/Tools_General_Outlook_Signatures/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://aba-ra.github.io/Tools_General_Outlook_Signatures/icon-128.png"/>
@@ -44,7 +44,7 @@
         <bt:Url id="Profile.Setup" DefaultValue="https://aba-ra.github.io/Tools_General_Outlook_Signatures/employee-pilot/setup.html"/>
         <bt:Url id="Runtime.Html" DefaultValue="https://aba-ra.github.io/Tools_General_Outlook_Signatures/employee-pilot/runtime.html"/>
         <bt:Url id="Runtime.Js" DefaultValue="https://aba-ra.github.io/Tools_General_Outlook_Signatures/employee-pilot/runtime.js"/>
-      </bt:Urls><bt:ShortStrings><bt:String id="Profile.Label" DefaultValue="Matertec Signatures"/></bt:ShortStrings><bt:LongStrings><bt:String id="Profile.Description" DefaultValue="View your Microsoft 365 work details and preview your automatic Matertec signature."/></bt:LongStrings></Resources>
+      </bt:Urls><bt:ShortStrings><bt:String id="Profile.Label" DefaultValue="UnifiedSignatures"/></bt:ShortStrings><bt:LongStrings><bt:String id="Profile.Description" DefaultValue="View your Microsoft 365 work details and preview your automatic Matertec signature."/></bt:LongStrings></Resources>
     </VersionOverrides>
   </VersionOverrides>
 </OfficeApp>
